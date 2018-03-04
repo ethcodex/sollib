@@ -1,6 +1,6 @@
 {
   "name": "sollib",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "lightweight solidity library",
   "main": "index.js",
   "scripts": {
