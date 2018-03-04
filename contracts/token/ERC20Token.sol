@@ -13,13 +13,13 @@ contract ERC20Token is ERC20 {
   mapping(address => uint256) balances;
   mapping (address => mapping (address => uint256)) internal allowed;
 
-  uint256 totalSupply_;
+  uint256 _totalSupply;
 
   /**
   * @dev total number of tokens in existence
   */
   function totalSupply() public view returns (uint256) {
-    return totalSupply_;
+    return _totalSupply;
   }
 
   /**

@@ -7,7 +7,7 @@ contract StandardTokenMock is ERC20Token {
 
   function StandardTokenMock(address initialAccount, uint256 initialBalance) public {
     balances[initialAccount] = initialBalance;
-    totalSupply_ = initialBalance;
+    _totalSupply = initialBalance;
   }
 
 }
