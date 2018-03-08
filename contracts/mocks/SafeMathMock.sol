@@ -8,14 +8,14 @@ contract SafeMathMock {
   uint256 public result;
 
   function multiply(uint256 a, uint256 b) public {
-    result = a.safeMul(b);
+    result = a.mul(b);
   }
 
   function subtract(uint256 a, uint256 b) public {
-    result = a.safeSub(b);
+    result = a.sub(b);
   }
 
   function add(uint256 a, uint256 b) public {
-    result = SafeMath.safeAdd(a, b);
+    result = SafeMath.add(a, b);
   }
 }
